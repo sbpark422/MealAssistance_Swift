@@ -14,7 +14,22 @@
 		F13C4AB824E155FF00ADDD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13C4AB724E155FF00ADDD6F /* Assets.xcassets */; };
 		F13C4ABB24E155FF00ADDD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13C4AB924E155FF00ADDD6F /* LaunchScreen.storyboard */; };
 		F13C4AC324E15B5900ADDD6F /* ProductInfo.sks in Resources */ = {isa = PBXBuildFile; fileRef = F13C4AC224E15B5900ADDD6F /* ProductInfo.sks */; };
+		F1FA47B524E179ED00982CBF /* HandGestureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA47B424E179ED00982CBF /* HandGestureProcessor.swift */; };
+		F1FA480B24E1D88500982CBF /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA480A24E1D88500982CBF /* Math.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1FA47C024E1945D00982CBF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F13C4AAB24E155FF00ADDD6F /* MealAssistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealAssistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,8 +39,9 @@
 		F13C4AB524E155FF00ADDD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F13C4AB724E155FF00ADDD6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13C4ABA24E155FF00ADDD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F13C4ABC24E155FF00ADDD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F13C4AC224E15B5900ADDD6F /* ProductInfo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ProductInfo.sks; sourceTree = "<group>"; };
+		F1FA47B424E179ED00982CBF /* HandGestureProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandGestureProcessor.swift; sourceTree = "<group>"; };
+		F1FA480A24E1D88500982CBF /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Math.swift; path = "../../Tipy-a10aca27268de02f678d12a4764e7a2b52bbdb75/Tippy/Math.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +74,15 @@
 		F13C4AAD24E155FF00ADDD6F /* MealAssistance */ = {
 			isa = PBXGroup;
 			children = (
+				F1FA480A24E1D88500982CBF /* Math.swift */,
 				F13C4AC224E15B5900ADDD6F /* ProductInfo.sks */,
 				F13C4AAE24E155FF00ADDD6F /* AppDelegate.swift */,
 				F13C4AB024E155FF00ADDD6F /* art.scnassets */,
 				F13C4AB224E155FF00ADDD6F /* ViewController.swift */,
+				F1FA47B424E179ED00982CBF /* HandGestureProcessor.swift */,
 				F13C4AB424E155FF00ADDD6F /* Main.storyboard */,
 				F13C4AB724E155FF00ADDD6F /* Assets.xcassets */,
 				F13C4AB924E155FF00ADDD6F /* LaunchScreen.storyboard */,
-				F13C4ABC24E155FF00ADDD6F /* Info.plist */,
 			);
 			path = MealAssistance;
 			sourceTree = "<group>";
@@ -80,6 +97,7 @@
 				F13C4AA724E155FF00ADDD6F /* Sources */,
 				F13C4AA824E155FF00ADDD6F /* Frameworks */,
 				F13C4AA924E155FF00ADDD6F /* Resources */,
+				F1FA47C024E1945D00982CBF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13C4AB324E155FF00ADDD6F /* ViewController.swift in Sources */,
+				F1FA47B524E179ED00982CBF /* HandGestureProcessor.swift in Sources */,
 				F13C4AAF24E155FF00ADDD6F /* AppDelegate.swift in Sources */,
+				F1FA480B24E1D88500982CBF /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,13 +310,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UYN69PD8T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MealAssistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.MealAssistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,13 +334,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UYN69PD8T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MealAssistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.MealAssistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
