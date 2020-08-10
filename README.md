@@ -1,2 +1,2 @@
 # Meal Assistance
-## iOS application
+## iOS 14 Xcode Version 12.0
