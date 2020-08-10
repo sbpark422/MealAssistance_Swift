@@ -13,6 +13,7 @@
 		F13C4AB624E155FF00ADDD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13C4AB424E155FF00ADDD6F /* Main.storyboard */; };
 		F13C4AB824E155FF00ADDD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13C4AB724E155FF00ADDD6F /* Assets.xcassets */; };
 		F13C4ABB24E155FF00ADDD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13C4AB924E155FF00ADDD6F /* LaunchScreen.storyboard */; };
+		F13C4AC324E15B5900ADDD6F /* ProductInfo.sks in Resources */ = {isa = PBXBuildFile; fileRef = F13C4AC224E15B5900ADDD6F /* ProductInfo.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F13C4AB724E155FF00ADDD6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13C4ABA24E155FF00ADDD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F13C4ABC24E155FF00ADDD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13C4AC224E15B5900ADDD6F /* ProductInfo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ProductInfo.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		F13C4AAD24E155FF00ADDD6F /* MealAssistance */ = {
 			isa = PBXGroup;
 			children = (
+				F13C4AC224E15B5900ADDD6F /* ProductInfo.sks */,
 				F13C4AAE24E155FF00ADDD6F /* AppDelegate.swift */,
 				F13C4AB024E155FF00ADDD6F /* art.scnassets */,
 				F13C4AB224E155FF00ADDD6F /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			files = (
 				F13C4AB124E155FF00ADDD6F /* art.scnassets in Resources */,
 				F13C4ABB24E155FF00ADDD6F /* LaunchScreen.storyboard in Resources */,
+				F13C4AC324E15B5900ADDD6F /* ProductInfo.sks in Resources */,
 				F13C4AB824E155FF00ADDD6F /* Assets.xcassets in Resources */,
 				F13C4AB624E155FF00ADDD6F /* Main.storyboard in Resources */,
 			);

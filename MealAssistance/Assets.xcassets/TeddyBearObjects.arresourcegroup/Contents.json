@@ -1,0 +1,23 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "ewhabear.arobject"
+    },
+    {
+      "filename" : "power.arobject"
+    },
+    {
+      "filename" : "teddy.arobject"
+    },
+    {
+      "filename" : "teddy2.arobject"
+    },
+    {
+      "filename" : "teddybear.arobject"
+    }
+  ]
+}
